@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Usuario realiza un crédito" skipped="0" tests="1" time="45.35" timestamp="2021-01-26 02:07:56"><testcase name="Usuario puede realizar credito"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-co.com.proyectobase.screenplay.tasks.Abrir.performAs(Abrir.java:52)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Usuario realiza un crédito" skipped="0" tests="1" time="39.29" timestamp="2021-01-26 05:53:03"><testcase name="Usuario puede realizar credito"><failure message="NO CARGÓ CORRECTAMENTE LA IDENTIFICACIÓN DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089a&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">NO CARGÓ CORRECTAMENTE LA IDENTIFICACIÓN DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089a
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>NO CARGÓ CORRECTAMENTE LA IDENTIFICACIÓN DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089a
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.proyectobase.screenplay.tasks.Abrir.performAs(Abrir.java:45)&#13;
 co.com.proyectobase.screenplay.stepdefinitions.LiquidacionCreditoDefinition.elUsuarioSeEncuentraEnLaPaginaDelCESDE(LiquidacionCreditoDefinition.java:30)&#13;
-✽.El usuario se encuentra en la pagina del CESDE(src/test/resources/features/liquidacion_credito.feature:6)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
 </system-err></testcase></testsuite>

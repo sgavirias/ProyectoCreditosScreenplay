@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-01-2021 14:07</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-01-2021 17:53</span>
     <br style="clear:left"/>
 </div>
 
@@ -146,9 +146,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">Usuario puede realizar credito
+                                <span class="failing-color">Usuario puede realizar credito
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -171,8 +171,8 @@
     <div id="contenttilttle">
             <div class="screenshotFailure panel panel-danger">
 
-                        <div class="panel-heading title="Null pointer exception">
-                            Null pointer exception
+                        <div class="panel-heading title="Assertion error: NO CARG&Oacute; CORRECTAMENTE LA IDENTIFICACI&Oacute;N DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089aExpected: is (true) but: was (false)">
+                            Assertion error: NO CARG&Oacute; CORRECTAMENTE LA IDENTIFICACI&Oacute;N DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089aExpected: is (true) but: was (false)
                         </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger" data-toggle="modal"
@@ -190,16 +190,19 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                    java.lang.NullPointerException
+                                    java.lang.AssertionError
                                 </h4>
                             </div>
                             <div class="modal-body">
+                                    <h5>
+                                        <pre>NO CARGÓ CORRECTAMENTE LA IDENTIFICACIÓN DEL USUARIO - Expected net.serenitybdd.screenplay.QuestionSubject@1474089a<br>Expected: is &lt;true&gt;<br>     but: was &lt;false&gt;</pre>
+                                    </h5>
                                     co.com.proyectobase.screenplay.tasks.Abrir.performAs(Abrir.java
-                                    :52) <br>
+                                    :45) <br>
                                     co.com.proyectobase.screenplay.stepdefinitions.LiquidacionCreditoDefinition.elUsuarioSeEncuentraEnLaPaginaDelCESDE(LiquidacionCreditoDefinition.java
                                     :30) <br>
-                                    ✽.El usuario se encuentra en la pagina del CESDE(src/test/resources/features/liquidacion_credito.feature
-                                    :6) <br>
+                                    cucumber.runner.Runner.runPickle(Runner.java
+                                    :80) <br>
                             </div>
 
                             <div class="modal-footer">
@@ -213,14 +216,17 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource5248528576877674784.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource452746441742648088.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="92a7112ecb8ccde5c9d577a8d9452d89196a9e2ec98d7b1efdfb7cdabe027fb3.png" title="Usuario opens the Cesde home page" width="1366"/>
-                <img src="dd38767345336ab45177945d3a359087dacf210b324058974700eb56b06ecdbb.png" title="Usuario clicks on Bot&oacute;n que cierra popup" width="1366"/>
-                <img src="dd38767345336ab45177945d3a359087dacf210b324058974700eb56b06ecdbb.png" title="Perform as: Usuario: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="ac6409d8c31407868b5bcfe06ace5f16a23f62f4c6458f82fb5fecb406d0e11f.png" title="Usuario clicks on Bot&oacute;n que cierra popup" width="1366"/>
+                <img src="b28fbeedb6b460513bf8011d48ce8fb9a0be6a436db13bf123be874771e8c8bb.png" title="Usuario selects 1402 in Lista de tipo de documento" width="1366"/>
+                <img src="cfba1087b6aa05d715d7c6e966869262ef07bf415b86273353fb8d2f6d8575be.png" title="Usuario enters '40404040' into Campo para diligenciar el numero de documento" width="1366"/>
+                <img src="0832167ea292411a274ab58d90ab29544b7246c4cfb3ba8fa3c172859184e45c.png" title="Usuario clicks on Bot&oacute;n para validar informaci&oacute;n" width="1366"/>
+                <img src="da44d5b1e22e8a57f594f12287d76eb8acfbc9e2f72df63fde7825a8380651c4.png" title="Then datos academicos: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

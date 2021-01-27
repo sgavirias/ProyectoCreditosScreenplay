@@ -1,6 +1,7 @@
 package co.com.proyectobase.screenplay.stepdefinitions;
 
 import co.com.proyectobase.screenplay.model.Estudiante;
+import co.com.proyectobase.screenplay.questions.DatosAcademicos;
 import co.com.proyectobase.screenplay.tasks.Abrir;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
@@ -12,6 +13,9 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 import java.util.List;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class LiquidacionCreditoDefinition {
 
@@ -28,6 +32,7 @@ public class LiquidacionCreditoDefinition {
     public void elUsuarioSeEncuentraEnLaPaginaDelCESDE(List <Estudiante> estudiante) {
 
         usuario.wasAbleTo(Abrir.paginaCesde(estudiante)
+        //usuario.should( seeThat("El crédito"), DatosAcademicos.segundoFormulario(),equalTo("Datos Académicos"));
 
         );
 

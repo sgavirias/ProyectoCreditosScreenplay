@@ -1,6 +1,8 @@
 package co.com.proyectobase.screenplay.tasks;
 
+import co.com.proyectobase.screenplay.exceptions.DatosAcademicosNoValidos;
 import co.com.proyectobase.screenplay.model.Estudiante;
+import co.com.proyectobase.screenplay.questions.DatosAcademicos;
 import co.com.proyectobase.screenplay.userinterface.CesdeHomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -8,19 +10,13 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromElement;
-import net.sourceforge.htmlunit.corejs.javascript.ArrowFunction;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 import java.util.List;
 
-import static co.com.proyectobase.screenplay.userinterface.CesdeHomePage.LST_TIPO_DOCUMENTO;
-import static co.com.proyectobase.screenplay.userinterface.CesdeHomePage.TXT_IDENTIFICACION;
+import static co.com.proyectobase.screenplay.exceptions.DatosAcademicosNoValidos.MENSAJE_DATOS_ACADEMICOS_INVALIDOS;
+import static co.com.proyectobase.screenplay.userinterface.CesdeHomePage.*;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 
 public class Abrir implements Task {
@@ -33,8 +29,6 @@ public class Abrir implements Task {
         this.estudiante = estudiante.get(0);
 
     }
-    WebDriver driver;
-
 
 
     @Override
@@ -42,8 +36,14 @@ public class Abrir implements Task {
         actor.attemptsTo(
                 Open.browserOn(cesdeHomePage),
                 Click.on(cesdeHomePage.BOTON_CERRAR_POPUP),
-                Click.on(LST_TIPO_DOCUMENTO)
+                SelectFromOptions.byValue("1402").from(LST_TIPO_DOCUMENTO),
+                Enter.theValue(estudiante.getDocNum()).into(TXT_IDENTIFICACION),
+                Click.on(BTN_VALIDAR)
         );
+
+        actor.should( seeThat(DatosAcademicos.segundoFormulario())
+                .orComplainWith(DatosAcademicosNoValidos.class, MENSAJE_DATOS_ACADEMICOS_INVALIDOS));
+
 
         //Select select = new Select(driver.findElement(By.className("col-md-2 mb-3")));
         //select.selectByIndex(2);
@@ -53,14 +53,6 @@ public class Abrir implements Task {
         //listaTipoDoc.selectByVisibleText("C.C.");
         Select listaDoc = new Select(listaTipoDoc);
         listaDoc.selectByValue("1402");*/
-
-        actor.attemptsTo(
-                Enter.theValue(estudiante.getDocNum()).into(TXT_IDENTIFICACION)
-                //Click.on(LST_TIPO_DOCUMENTO)
-                //Enter.theValue("1402").into(LST_TIPO_DOCUMENTO)
-
-        );
-
 
 
     }

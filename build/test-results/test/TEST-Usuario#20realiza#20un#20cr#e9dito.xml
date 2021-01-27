@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Usuario realiza un crédito" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-01-26T19:07:57" hostname="CHMEPPF0GXDD2" time="44.301">
+<testsuite name="Usuario realiza un crédito" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-01-27T18:03:21" hostname="CHMEPPF0GXDD2" time="104.428">
   <properties/>
-  <testcase name="Usuario puede realizar credito" classname="Usuario realiza un crédito" time="44.301">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at co.com.proyectobase.screenplay.tasks.Abrir.performAs(Abrir.java:52)
-	at co.com.proyectobase.screenplay.tasks.Abrir$$EnhancerByCGLIB$$7b4c84b.CGLIB$performAs$0(&lt;generated&gt;)
-	at co.com.proyectobase.screenplay.tasks.Abrir$$EnhancerByCGLIB$$7b4c84b$$FastClassByCGLIB$$b1f21a9b.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
-	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
-	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at co.com.proyectobase.screenplay.tasks.Abrir$$EnhancerByCGLIB$$7b4c84b.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:84)
-	at co.com.proyectobase.screenplay.stepdefinitions.LiquidacionCreditoDefinition.elUsuarioSeEncuentraEnLaPaginaDelCESDE(LiquidacionCreditoDefinition.java:30)
-	at ✽.El usuario se encuentra en la pagina del CESDE(src/test/resources/features/liquidacion_credito.feature:6)
-</failure>
+  <testcase name="Usuario puede realizar credito" classname="Usuario realiza un crédito" time="104.428">
+    <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[ene 26, 2021 2:07:58 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[ene 27, 2021 1:03:22 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 30276
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 43976
 Only local connections are allowed.
-[1611688101.977][WARNING]: Timed out connecting to Chrome, retrying...
-ene 26, 2021 2:08:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1611770625.782][WARNING]: Timed out connecting to Chrome, retrying...
+ene 27, 2021 1:03:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] ERROR net.serenitybdd.core.Serenity - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED WITH ERROR: Usuario puede realizar credito
----------------------------------------------------------------------
-[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Perform as: Usuario
-[Test worker] ERROR net.serenitybdd.core.Serenity - 
 ]]></system-err>
 </testsuite>

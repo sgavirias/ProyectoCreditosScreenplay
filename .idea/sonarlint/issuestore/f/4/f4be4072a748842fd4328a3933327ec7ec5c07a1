@@ -1,0 +1,13 @@
+
+M
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Œº‰¥ô.
+X	java:S125+"<This block of commented-out lines of code should be removed.(°Äº­8Œº‰¥ô.
+W	java:S125"<This block of commented-out lines of code should be removed.( «è~8Œº‰¥ô.
+
+java:S1128"dRemove this unused import 'co.com.proyectobase.screenplay.util.Constantes.MENSAJE_DATOS_ACADEMICOS'.(±ÈÙä8Œº‰¥ô.
+X	java:S125"<This block of commented-out lines of code should be removed.(’Òå™8Œº‰¥ô.
+
+java:S1128"lRemove this unused import 'co.com.proyectobase.screenplay.userinterface.CesdeHomePage.LBL_DATOS_ACADEMICOS'.( ‚¡ºüÿÿÿÿ8Œº‰¥ô.
+t
+java:S1128"WRemove this unused import 'co.com.proyectobase.screenplay.userinterface.CesdeHomePage'.(¹ÓÆô8Œº‰¥ô.
